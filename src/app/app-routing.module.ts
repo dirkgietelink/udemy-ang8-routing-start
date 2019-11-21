@@ -32,7 +32,8 @@ const appRoutes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(appRoutes, {useHash: true})
+    // RouterModule.forRoot(appRoutes, {useHash: true})  // in case of old web servers, which cannot resolve index.html
+    RouterModule.forRoot(appRoutes)
   ],
   exports: [
     RouterModule
